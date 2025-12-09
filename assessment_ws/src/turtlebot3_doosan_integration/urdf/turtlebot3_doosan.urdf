@@ -1,0 +1,18 @@
+<?xml version="1.0" ?>
+<robot name="turtlebot3_doosan" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+  <!-- ✅ Load TurtleBot3 -->
+  <xacro:include filename="/opt/ros/humble/share/turtlebot3_description/urdf/turtlebot3_burger.urdf"/>
+
+  <!-- ✅ Load Doosan Arm -->
+  <xacro:include filename="$(find my_doosan_pkg)/description/urdf/m1013.white.urdf"/>
+
+  <!-- ✅ CORRECT MOUNT JOINT -->
+  <joint name="doosan_mount_joint" type="fixed">
+    <parent link="base_link"/>
+    <child link="base_0"/>
+    <origin xyz="0 0 0.35" rpy="0 0 0"/>
+  </joint>
+
+</robot>
+

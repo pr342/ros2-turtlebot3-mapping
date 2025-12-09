@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>my_doosan_pkg</name>
+  <version>0.0.0</version>
+  <description>Doosan robot description package</description>
+
+  <maintainer email="protima@gmail.com">protima</maintainer>
+  <license>Apache-2.0</license>
+
+  <!-- ✅ THIS IS THE MISSING LINE -->
+  <buildtool_depend>ament_python</buildtool_depend>
+
+  <exec_depend>rclpy</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <!-- ✅ THIS WAS MISSING AND BREAKING EVERYTHING -->
+    <build_type>ament_python</build_type>
+  </export>
+</package>

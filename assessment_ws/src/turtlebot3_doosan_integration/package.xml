@@ -1,0 +1,26 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>turtlebot3_doosan_integration</name>
+  <version>0.0.1</version>
+  <description>TurtleBot3 and Doosan robot mobile manipulator integration</description>
+
+  <maintainer email="protima@gmail.com">protima</maintainer>
+  <license>Apache-2.0</license>
+
+  <buildtool_depend>ament_cmake</buildtool_depend>
+
+  <exec_depend>rclpy</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>joint_state_publisher</exec_depend>
+  <exec_depend>gazebo_ros</exec_depend>
+  <exec_depend>turtlebot3_gazebo</exec_depend>
+  <exec_depend>my_doosan_pkg</exec_depend>
+
+  <test_depend>ament_lint_auto</test_depend>
+  <test_depend>ament_lint_common</test_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>
+
