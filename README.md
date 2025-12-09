@@ -86,11 +86,6 @@ Through this project, I gained hands-on experience with:
 ✔️ Map saved and verified
 ✔️ Demo video recorded
 ✔️ Project uploaded to GitHub
-
----
-
-If you want, I can also give you:
-✅ A **one-line resume description**
 ✅ A **LinkedIn project caption**
 ✅ A **HR explanation script (interview-ready)**
 
