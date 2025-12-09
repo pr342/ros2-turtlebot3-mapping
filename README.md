@@ -76,17 +76,3 @@ Through this project, I gained hands-on experience with:
 * RViz visualization tools
 * Robot teleoperation
 * Real-time sensor data handling
-
----
-
-## ✅ Project Status
-
-✔️ Simulation setup completed
-✔️ Mapping executed successfully
-✔️ Map saved and verified
-✔️ Demo video recorded
-✔️ Project uploaded to GitHub
-✅ A **LinkedIn project caption**
-✅ A **HR explanation script (interview-ready)**
-
-Just tell me what you want next 💙
