@@ -1,18 +1,17 @@
-# 🚀 ROS 2 TurtleBot3 Mapping Project
+# 🚀 ROS 2 TurtleBot3 Mapping Project with Robotic Arm
 
-This project demonstrates **real-time SLAM (Simultaneous Localization and Mapping)** using **TurtleBot3 in a Gazebo simulation environment with ROS 2**.
-The robot is manually controlled using a keyboard to explore the environment and generate a 2D occupancy map in real time using **RViz2**.
+This project demonstrates **real-time SLAM (Simultaneous Localization and Mapping)** using **TurtleBot3** in a **Gazebo simulation environment** with **ROS 2**, with an **attached robotic arm**. The robot is manually controlled using a keyboard to explore the environment and generate a 2D occupancy map in real time using **RViz2**, while also simulating a robotic arm mounted on the TurtleBot3.
 
-This repository contains the **live mapping screen recording and the generated map output**.
+This repository contains the live mapping screen recording, generated map output, and setup for the robotic arm integration.
 
 ---
 
 ## 🎯 Objective of the Project
 
-* To simulate a **mobile robot (TurtleBot3)** in a virtual environment
-* To perform **real-time environment mapping using SLAM**
-* To visualize sensor data, robot movement, and map generation in **RViz2**
-* To save and export the final generated map
+* To simulate a mobile robot (**TurtleBot3**) with a **robotic arm** in a virtual environment
+* To perform **real-time environment mapping** using SLAM
+* To visualize **sensor data, robot movement, robotic arm movement, and map generation** in RViz2
+* To save and export the **final generated map**
 
 ---
 
@@ -21,7 +20,8 @@ This repository contains the **live mapping screen recording and the generated m
 ```
 ros2-turtlebot3-mapping/
 ├── ros2_turtlebot3_mapping_demo.webm   → Screen recording of live SLAM mapping
-└── map_XXXXXXXX.pgm                    → Generated occupancy grid map
+├── map_XXXXXXXX.pgm                    → Generated occupancy grid map
+└── robotic_arm_simulation/             → Launch and control scripts for the robotic arm
 ```
 
 ---
@@ -32,6 +32,7 @@ ros2-turtlebot3-mapping/
 * **Gazebo Simulator**
 * **RViz2 Visualization Tool**
 * **TurtleBot3 Packages**
+* **Robotic Arm Packages (simulated on TurtleBot3)**
 * **Teleop Keyboard Control**
 * **Cartographer SLAM**
 
@@ -39,29 +40,33 @@ ros2-turtlebot3-mapping/
 
 ## ⚙️ What Was Implemented
 
-* Launched **TurtleBot3 simulation in Gazebo**
-* Started **SLAM mapping using Cartographer**
+* Launched **TurtleBot3 simulation in Gazebo** with a mounted **robotic arm**
+* Started **SLAM mapping** using Cartographer
 * Controlled robot motion using **keyboard teleoperation**
-* Visualized:
+* Simulated **robotic arm movement** using pre-defined commands
+* Visualized in RViz2:
 
   * Laser scan data
   * Robot movement
+  * Robotic arm position and motion
   * Live map generation
-* Successfully **generated and saved the final map**
+* Successfully generated and saved the **final 2D map**
 * Recorded the full mapping process as a **demo video**
 
 ---
 
 ## 🎥 Demo Output
 
-* ✅ **Live Mapping Video** (`.webm`)
-* ✅ **Generated Map File** (`.pgm`)
+✅ **Live Mapping Video (.webm)**
+✅ **Generated Map File (.pgm)**
+✅ **Robotic Arm Simulation**
 
 These demonstrate:
 
 * Real-time map generation
 * Robot navigation
-* Sensor data integration.
+* Robotic arm integration
+* Sensor data handling
 * SLAM functionality in action
 
 ---
@@ -76,3 +81,4 @@ Through this project, I gained hands-on experience with:
 * RViz visualization tools
 * Robot teleoperation
 * Real-time sensor data handling
+* Simulating a **robotic arm mounted on a mobile robot**
